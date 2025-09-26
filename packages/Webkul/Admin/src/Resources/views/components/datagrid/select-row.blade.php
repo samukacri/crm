@@ -1,0 +1,1 @@
+<input type="checkbox" :value="$row->id" v-model="selectedRows" />

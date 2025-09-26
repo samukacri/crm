@@ -1,0 +1,28 @@
+{
+    "name": "webkul/project",
+    "description": "Project module for Krayin CRM",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Webkul Software",
+            "email": "support@krayincrm.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\Project\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\Project\\Providers\\ProjectServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
