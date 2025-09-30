@@ -14,11 +14,11 @@
                     alt="{{ config('app.name') }}"
                 />
             @else
-                <img
-                    class="w-max"
-                    src="{{ vite()->asset('packages/Webkul/Admin/src/Resources/assets/images/logo.svg') }}"
-                    alt="{{ config('app.name') }}"
-                />
+                <img 
+                     class="w-max" 
+                     src="{{ asset('admin/build/assets/logo-Bjh7YAuF.svg') }}" 
+                     alt="{{ config('app.name') }}" 
+                 />
             @endif
 
             <div class="box-shadow flex min-w-[300px] flex-col rounded-md bg-white dark:bg-gray-900">
