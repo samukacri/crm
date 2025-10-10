@@ -134,6 +134,17 @@ return [
     ],
 
     /**
+     * Properties.
+     */
+    [
+        'key'        => 'properties',
+        'name'       => 'admin::app.layouts.properties',
+        'route'      => 'admin.properties.index',
+        'sort'       => 8,
+        'icon-class' => 'icon-property',
+    ],
+
+    /**
      * Projects.
      */
     [        'key'        => 'projects',

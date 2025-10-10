@@ -33,3 +33,6 @@ node_modules/
 /test-results/
 /blob-report/
 /playwright/.cache/
+
+# Exclude qwen-code subrepository
+qwen-code/

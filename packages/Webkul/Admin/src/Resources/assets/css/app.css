@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.woff?w2trdd') format('woff');
+    src: url('/admin/build/assets/icomoon-BbY1GX-d.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -620,11 +620,11 @@
 
     @keyframes skeleton {
         0% {
-            @apply bg-[-1250px_0];
+            background-position: -1250px 0;
         }
 
         100% {
-            @apply bg-[1250px_0];
+            background-position: 1250px 0;
         }
     }
 

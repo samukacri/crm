@@ -456,3 +456,21 @@ Breadcrumbs::for('dashboard.account.edit', function (BreadcrumbTrail $trail, $us
     $trail->parent('dashboard');
     $trail->push(trans('admin::app.account.edit.title'), route('admin.user.account.edit', $user->id));
 });
+
+// Properties
+Breadcrumbs::for('properties', function (BreadcrumbTrail $trail) {
+    $trail->parent('dashboard');
+    $trail->push(trans('admin::app.layouts.properties'), route('admin.properties.index'));
+});
+
+// Properties > Create
+Breadcrumbs::for('properties.create', function (BreadcrumbTrail $trail) {
+    $trail->parent('properties');
+    $trail->push(trans('admin::app.properties.create.title'), route('admin.properties.create'));
+});
+
+// Properties > Edit
+Breadcrumbs::for('properties.edit', function (BreadcrumbTrail $trail, $property) {
+    $trail->parent('properties');
+    $trail->push(trans('admin::app.properties.edit.title'), route('admin.properties.edit', $property->id));
+});

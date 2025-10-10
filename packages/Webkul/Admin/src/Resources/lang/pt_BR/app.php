@@ -2207,6 +2207,8 @@ return [
         'organization'         => 'Empresa',
         'products'             => 'Produtos',
         'product'              => 'Produto',
+        'properties'           => 'Imóveis',
+        'property'             => 'Imóvel',
         'settings'             => 'Configurações',
         'user'                 => 'Usuário',
         'user-info'            => 'Gerencie todos os seus usuários e suas permissões no CRM, o que eles estão autorizados a fazer.',

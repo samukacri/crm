@@ -19,4 +19,7 @@ Route::group(['middleware' => ['web', 'admin_locale', 'user'], 'prefix' => confi
     
     // Task filtering
     Route::get('/projects/tasks/filter', [ProjectController::class, 'filterTasks'])->name('admin.projects.tasks.filter');
+    
+    // Kanban lookup
+    Route::get('/projects/kanban/lookup', [ProjectController::class, 'kanbanLookup'])->name('admin.projects.kanban.lookup');
 });

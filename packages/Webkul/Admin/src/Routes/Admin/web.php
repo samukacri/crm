@@ -26,6 +26,11 @@ require 'settings-routes.php';
 require 'products-routes.php';
 
 /**
+ * Properties routes.
+ */
+require 'properties-routes.php';
+
+/**
  * Contacts routes.
  */
 require 'contacts-routes.php';

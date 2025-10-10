@@ -22,7 +22,12 @@ class Vite
 
         $url = trim($filename, '/');
 
-        $viteUrl = trim($viters[$namespace]['package_assets_directory'], '/').'/'.$url;
+        // Se o caminho já for completo (começar com 'packages/'), usar diretamente
+        if (strpos($url, 'packages/') === 0) {
+            $viteUrl = $url;
+        } else {
+            $viteUrl = trim($viters[$namespace]['package_assets_directory'], '/').'/'.$url;
+        }
 
         return BaseVite::useHotFile($viters[$namespace]['hot_file'])
             ->useBuildDirectory($viters[$namespace]['build_directory'])
